@@ -4,13 +4,17 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var logger = require('loopback-component-logger')();
 var app = module.exports = loopback();
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var cookieSession = require('cookie-session'); //creating a cookie session to persist the oauth information
 var sync = require('./routes/sync');
 
-app.use(cookieSession({
+app.use(cookieParser());
+app.use(session({secret: "Shh, its a secret!"}));
+/*app.use(cookieSession({
   name: 'session',
   keys: ['key1']
-}))
+})) 
 
 app.all('*', function (req, res, next) {
   if (process.env.HOST === undefined) {
@@ -18,9 +22,13 @@ app.all('*', function (req, res, next) {
     process.env.HOST = host;
     process.env.CUSTOM_CALLBACK_URI = '//' + host + '/sync/callback/';
   }
-  next('route');
+  next();
 });
+*/
 
+// Use the session middleware 
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 5000 }}))
+ 
 //app.set('routes', './routes');
 app.use('/sync', sync);
 

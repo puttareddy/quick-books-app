@@ -11,5 +11,5 @@ Feature: Should return database values for known customer
 
     Examples:
       | Property           | Value                              |
-      | retirementSavings  | Non-CMA, Newfoundland and Labrador |
+      | location           | Toronto                            |
      
