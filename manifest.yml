@@ -1,0 +1,8 @@
+applications:
+- memory: 256M
+  instances: 1
+  name: quick-books-api
+  host: quick-books-api
+  command: npm start
+  buildpack: nodejs_buildpack1530
+   

@@ -1,0 +1,32 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3006,
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false
+  },
+  "legacyExplorer": false,
+  "qb": {
+    "consumerKey": "qyprdgTJsgHPSMSpdNmGDlNFU7mqXe",
+    "consumerSecret": "Y1IiVhAtXRjysEAPgsZBhaQxv6SQso8y4tE29XBR",
+    "token": "",
+    "tokenSecret": "",
+    "realmId": "193514527915054",    
+    "useSandbox": true,
+    "debug": false
+  }
+}
