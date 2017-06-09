@@ -3,7 +3,7 @@
 Here are the list of improvements can be made to this application.  With the app development flow out-of-the-way,
 I can focus on these improvements in near future.
 
-###The learning never stops so any feedback, comments, criticisms are greatly welcomed! ###
+### The learning never stops so any feedback, comments, criticisms are greatly welcomed! ###
 
 Technical
 =========================
