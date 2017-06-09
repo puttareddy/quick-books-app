@@ -5,13 +5,17 @@ I can focus on these improvements in near future.
 
 ### The learning never stops so any feedback, comments, criticisms are greatly welcomed! ###
 
-Technical
-=========================
+## Functional ##
+
+ * We can create a form that edits a record in Quickbooks (not Mongo) and refreshes the Mongo database
+
+ 
+## Technical ##
 
  * API Server 
     * LoopbackJS is used as API server
     * API Server can be used as Integration gateway between multiple eco-systems. 
-      * Used do CURD options on MongoDB database
+      * Uses to do CURD options on MongoDB database
       * Can be used as a proxy for QuickBooks API as well.
 
  * Assembly Server 
@@ -24,9 +28,9 @@ Technical
     * The generated bundle can be injected to Assembly server to server clients.
     * This can also be developed/tested indepedently in development mode without having dependencies on Server side (Using webpack)
 
-Refer below diagram for Proposed Solution ![picture alt](./Proposed-Solution.JPEG "Proposed Solution")
+* Development and deployment With Docker to be valided fully
 
- Functional
-=========================
+Refer [Solution] for more details around this
 
- * We can create a form that edits a record in Quickbooks (not Mongo) and refreshes the Mongo database
+[Solution]: <SOLUTION.md>
+

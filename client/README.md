@@ -1,4 +1,4 @@
-# React Redux Table Example
+# Quick Books Client Application
 
 [![Build Status](https://travis-ci.org/alyssaq/react-redux-table-example.png?branch=master)](https://travis-ci.org/alyssaq/react-redux-table-example)
 
@@ -53,6 +53,3 @@ $ npm test          # Runs mocha
 $ npm run test:dev  # Run mocha in watch mode
 ```
 
-## Thanks
-
-Data from [USDA nutrient API](http://ndb.nal.usda.gov/ndb/doc/apilist/API-NUTRIENT-REPORT.md)
