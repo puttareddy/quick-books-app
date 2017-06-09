@@ -24,6 +24,8 @@ Technical
     * The generated bundle can be injected to Assembly server to server clients.
     * This can also be developed/tested indepedently in development mode without having dependencies on Server side (Using webpack)
 
+Refer below diagram for Proposed Solution ![picture alt](./Proposed-Solution.jpg "Proposed Solution")
+
  Functional
 =========================
 
