@@ -42,6 +42,7 @@ export default function fetchDispatch (opts) {
     return fetch(opts.url, { headers: opts.headers || {} })
       .then(handleResponse)
       .then((data) => { // Dispatch the recevied action with type and data
+        console.log('--after data received------------', data)
         const obj = opts.onReceived ? opts.onReceived(data) : { data }
         return dispatch(Object.assign({ type: opts.types.receive }, obj))
       }).catch((error) => dispatch(errorAction(error)))

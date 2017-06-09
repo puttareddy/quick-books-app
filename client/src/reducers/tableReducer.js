@@ -1,14 +1,14 @@
 import { ACTIONS } from '../constants'
 
 export function listFoodWithNutrients (data) {
-  const foods = data.report.foods
-
-  return foods.reduce((arr, food) => {
+  const foods = data
+  return foods;
+ /* return foods.reduce((arr, food) => {
     food.nutrients.forEach((nutrient) => {
       nutrient.food = food.name
     })
     return arr.concat(food.nutrients)
-  }, [])
+  }, []) */
 }
 
 function handleTableActions (state, action) {

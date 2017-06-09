@@ -115,7 +115,7 @@ var getQbo = function (args) {
 var initialCalls = function (qbo) {
   //The first QBO request made in this app is a query to get a list of Customers in the user's company
   qbo.findCustomers({
-      limit: 10
+      limit: 1000
     },
     function (e, searchResults) {
       customers = searchResults.QueryResponse.Customer;
