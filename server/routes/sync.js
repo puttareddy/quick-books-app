@@ -40,7 +40,7 @@ router.get('/authorize', function (req, res) {
     let postBody = {
       url: QuickBooks.REQUEST_TOKEN_URL,
       oauth: {
-        callback: 'http://localhost:' + port + '/sync/callback/',
+        callback: 'https://quick-books-app.herokuapp.com/sync/callback/',
         consumer_key: consumerKey,
         consumer_secret: consumerSecret
       }

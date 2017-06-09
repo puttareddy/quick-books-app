@@ -6,7 +6,7 @@ function stringsToObject (actions) {
 }
 
 export default {
-  QUICK_BOOKS_CUSTOMERS_API: 'http://localhost:3006/api/customers',
+  QUICK_BOOKS_CUSTOMERS_API: 'https://quick-books-app.herokuapp.com/api/customers',
 
   ACTIONS: stringsToObject(`
     REQUEST_NUTRIENTS_DATA
