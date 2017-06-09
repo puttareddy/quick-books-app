@@ -51,7 +51,7 @@
     "cucumber": "1.x",
     "cucumber-html-reporter": "0.x",
     "eslint": "3.x",
-    "eslint-config-loopback": "0.x",
+    "eslint-config-loopback": "8.x",
     "mkdirp": "0.x",
     "mocha": "2.x",
     "nodemon": "1.x",

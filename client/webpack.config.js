@@ -85,8 +85,8 @@ module.exports = {
   module: {
     rules: [
       ...assetsLoaders,
-      babelLoader,
-      lintLoader
+      babelLoader
+      //,lintLoader
     ]
   },
   stats: {

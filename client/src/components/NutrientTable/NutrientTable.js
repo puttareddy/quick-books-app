@@ -94,26 +94,26 @@ class NutrientTable extends React.Component {
           headerHeight={50}
           rowsCount={data.length}>
           <Column
-            columnKey='food'
-            header={<SortHeaderCell {...headerCellProps}> Food </SortHeaderCell>}
+            columnKey='GivenName'
+            header={<SortHeaderCell {...headerCellProps}> GivenName </SortHeaderCell>}
             cell={<DataCell data={data} />}
             flexGrow={3}
             width={100} />
           <Column
-            columnKey='nutrient'
-            header={<SortHeaderCell {...headerCellProps}> Nutrient </SortHeaderCell>}
+            columnKey='FamilyName'
+            header={<SortHeaderCell {...headerCellProps}> FamilyName </SortHeaderCell>}
             cell={<DataCell data={data} />}
             flexGrow={1}
             width={100} />
           <Column
-            columnKey='value'
-            header={<SortHeaderCell {...headerCellProps}> Value </SortHeaderCell>}
+            columnKey='FullyQualifiedName'
+            header={<SortHeaderCell {...headerCellProps}> FullyQualifiedName </SortHeaderCell>}
             cell={<DataCell data={data} />}
             flexGrow={0.5}
             width={100} />
           <Column
-            columnKey='unit'
-            header={<SortHeaderCell {...headerCellProps}> Unit </SortHeaderCell>}
+            columnKey='Id'
+            header={<SortHeaderCell {...headerCellProps}> Id </SortHeaderCell>}
             cell={<DataCell data={data} />}
             flexGrow={0.1}
             width={100} />

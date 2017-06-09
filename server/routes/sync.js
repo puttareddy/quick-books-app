@@ -95,7 +95,7 @@ router.get('/callback', function (req, res) {
 
   })
 
-  res.redirect('/explorer');
+  res.redirect('/');
   sessionSet = true;
 })
 

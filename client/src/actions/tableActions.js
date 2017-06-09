@@ -1,10 +1,8 @@
 import CONSTS from '../constants'
 import fetchDispatch from './fetchUtils'
 
-const nutrientSep = '&nutrients='
 const apiProps = {
-  url: CONSTS.USDA_NUTRIENTS_URL_WITH_APIKEY +
-    nutrientSep + CONSTS.NUTRIENTS.join(nutrientSep),
+  url: CONSTS.USDA_NUTRIENTS_URL_WITH_APIKEY,
   types: {
     request: CONSTS.ACTIONS.REQUEST_NUTRIENTS_DATA,
     receive: CONSTS.ACTIONS.RECEIVE_NUTRIENTS_DATA
