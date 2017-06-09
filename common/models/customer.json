@@ -1,7 +1,13 @@
 {
   "name": "Customer",
   "base": "PersistedModel",
-  "idInjection": true,
+  "plural": "customers",
+  "options": {
+    "validateUpsert": true,
+    "mongodb": {
+      "collection": "customer"
+    }
+  },
   "properties": {
   
   },

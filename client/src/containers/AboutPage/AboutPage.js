@@ -5,25 +5,23 @@ const AboutPage = () => {
   return (
     <div className='about'>
       <h1> About </h1>
-      This example app serves as a boilerplate for my recurring use case: <br />
+      This is a FULL Stack application with below technologies <br />
       <ol>
-        <li> Request data from multiple APIs </li>
-        <li> Transform/merge the data </li>
-        <li> Display and interact via the UI </li>
+        <li> Loopback JS is used to serve RESTFul APIs</li>
+        <li> React/Redux is used to FE application  </li>
+        <li> MongoDB as a database (SasS)</li>
+        <li> QuickBooks API as datasource </li>
+        <li> Docker and Docker compose to deploy the application </li>
       </ol>
-      <p>
-        With the app development flow out-of-the-way,
-        I can focus on the data analytics and D3 visualisations.
-      </p>
-      <p>
+     <p>
         The learning never stops so any feedback, comments,
         criticisms are greatly welcomed!
       </p>
       <p> Source code at: &nbsp;
-        <a href='https://github.com/alyssaq/react-redux-table-example'>
+        <a href='https://github.com/puttareddy/quick-books-app'>
           <img className='github-logo' title='Github logo face'
             src='http://cdn.flaticon.com/svg/37/37819.svg' />
-            /alyssaq/react-redux-table-example
+            /puttareddy/quick-books-app
         </a>
       </p>
     </div>

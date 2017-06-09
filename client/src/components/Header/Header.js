@@ -7,7 +7,7 @@ export default (props) => {
   return (
     <header>
       <strong>
-        <IndexLink to='/'> React Redux Example </IndexLink>
+        <IndexLink to='/'> Quick Books React Redux Application </IndexLink>
       </strong>
       <Navigation />
     </header>

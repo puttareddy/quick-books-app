@@ -7,7 +7,7 @@ export default (props) => {
     <nav role='navigation'>
       <ul>
         <li>
-          <Link to='/nutrients'>Nutrients</Link>
+          <Link to='/sync/authorize'>Sync API Data</Link>
         </li>
         <li>
           <Link to='/about'>About</Link>

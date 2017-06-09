@@ -2,7 +2,7 @@ import CONSTS from '../constants'
 import fetchDispatch from './fetchUtils'
 
 const apiProps = {
-  url: CONSTS.USDA_NUTRIENTS_URL_WITH_APIKEY,
+  url: CONSTS.QUICK_BOOKS_CUSTOMERS_API,
   types: {
     request: CONSTS.ACTIONS.REQUEST_NUTRIENTS_DATA,
     receive: CONSTS.ACTIONS.RECEIVE_NUTRIENTS_DATA
