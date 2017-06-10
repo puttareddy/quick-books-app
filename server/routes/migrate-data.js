@@ -20,7 +20,7 @@ var sessionSet = false,
 
 //This route will take the Request Token and Initiate the User Authentication
 router.get('/authorize', function (req, res) {
-  if (sessionSet) {
+  if (sessionSet && req.session.qbo) {
     //Call getQbo to create a QBO object in order to make QBO requests and migrate data
     let qbo = getQbo(req.session.qbo);   
     migrateData(qbo);
