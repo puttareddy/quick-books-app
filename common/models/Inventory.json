@@ -1,7 +1,13 @@
 {
   "name": "Inventory",
   "base": "PersistedModel",
-  "idInjection": true,
+  "plural": "inventory",
+  "options": {
+    "validateUpsert": true,
+    "mongodb": {
+      "collection": "inventory"
+    }
+  },
   "properties": {
   
   },

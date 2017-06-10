@@ -8,18 +8,17 @@ var app = module.exports = loopback();
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var cookieSession = require('cookie-session'); //creating a cookie session to persist the oauth information
-var sync = require('./routes/sync');
+var migrate = require('./routes/migrate-data');
 const buildPath = path.join(__dirname, '../client/build')
 
-app.use(cookieParser());
-app.use(session({secret: "Shh, its a secret!"}));
-
 // Use the session middleware 
-app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 5000 }}))
- 
-//app.set('routes', './routes');
-app.use('/sync', sync);
+app.use(cookieParser());
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 20000 }}))
 
+// mount the data migration process to /sync route
+app.use('/sync', migrate);
+
+// mount react/redux client application to express application
 app.use(loopback.static(buildPath));
 
 app.start = function () {
@@ -27,10 +26,10 @@ app.start = function () {
   return app.listen(function () {
     app.emit('started');
     var baseUrl = app.get('url').replace(/\/$/, '');
-    console.log('Web server listening at: %s', baseUrl);
+    logger.info('Web server listening at: %s', baseUrl);
     if (app.get('loopback-component-explorer')) {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
-      console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
+      logger.info('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
   });
 };
