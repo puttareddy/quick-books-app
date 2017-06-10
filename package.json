@@ -1,0 +1,71 @@
+{
+  "name": "quick-books-api",
+  "version": "0.0.1",
+  "main": "server/server.js",
+  "license": "UNLICENSED",
+  "description": "lookup-engine",
+  "scripts": {
+    "build": "yarn lint && yarn cover && yarn cucumber && yarn nsp",
+    "cover": "nyc yarn test",
+    "cucumber": "cucumberjs -r features -f json:reports/cucumber/cucumber.json",
+    "lint": "eslint .",
+    "nodemon": "nodemon .",
+    "nsp": "nsp check",
+    "precucumber": "mkdirp reports/cucumber",
+    "start": "node .",
+    "test": "mocha --recursive",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "test": {
+      "extension": "js",
+      "patterns": [
+        "common",
+        "test"
+      ],
+      "quiet": true
+    }
+  },
+  "dependencies": {
+    "compression": "1.6.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.2",
+    "cors": "2.5.2",
+    "express-session": "^1.15.3",
+    "helmet": "1.3.0",
+    "lodash": "4.17.4",
+    "loopback": "2.22.0",
+    "loopback-boot": "2.23.0",
+    "loopback-component-explorer": "2.4.0",
+    "loopback-component-jsonapi": "2.2.1",
+    "loopback-component-logger": "0.3.4",
+    "loopback-connector-mongodb": "3.0.0",
+    "loopback-datasource-juggler": "2.53.0",
+    "node-quickbooks": "^2.0.13",
+    "querystring": "^0.2.0",
+    "strong-error-handler": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "3.x",
+    "chai-json-equal": "0.x",
+    "cucumber": "1.x",
+    "cucumber-html-reporter": "0.x",
+    "eslint": "3.x",
+    "eslint-config-loopback": "8.x",
+    "mkdirp": "0.x",
+    "mocha": "2.x",
+    "nodemon": "1.x",
+    "npm-watch": "0.x",
+    "nsp": "2.x",
+    "nyc": "10.x",
+    "supertest": "2.x"
+  },
+  "engines": {
+    "node": "7.6.0",
+    "yarn": "0.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.manulife.com:2222/acdc/lookup-engine.git"
+  }
+}

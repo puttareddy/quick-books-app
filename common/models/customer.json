@@ -1,0 +1,18 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "plural": "customers",
+  "options": {
+    "validateUpsert": true,
+    "mongodb": {
+      "collection": "customer"
+    }
+  },
+  "properties": {
+  
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
