@@ -3,11 +3,12 @@ import { Link } from 'react-router'
 import './Navigation.styl'
 
 export default (props) => {
+  
   return (
     <nav role='navigation'>
       <ul>
         <li>
-          <Link to='/sync/authorize'>Sync API Data</Link>
+          <Link to='/sync/authorize' onClick={startMigration}>Migrate Data</Link>
         </li>
         <li>
           <Link to='/about'>About</Link>
@@ -15,4 +16,8 @@ export default (props) => {
       </ul>
     </nav>
   )
+
+  function startMigration() {
+    window.location = '/sync/authorize';
+  }
 }
