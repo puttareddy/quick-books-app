@@ -1,13 +1,9 @@
 {
-  "name": "react-redux-example",
+  "name": "qb-react-redux-app",
   "version": "1.0.0",
-  "description": "React Redux Example",
+  "description": "Quick Book React Redux",
   "engines": {
     "node": ">7.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alyssaq/react-redux-table-example"
   },
   "license": "MIT",
   "scripts": {
