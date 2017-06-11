@@ -7,7 +7,7 @@ export default (props) => {
   return (
     <header>
       <strong>
-        <IndexLink to='/'> Quick Books Full Stack Application </IndexLink>
+        <IndexLink to='/'> Quick Books Full Stack App </IndexLink>
       </strong>
       <Navigation />
     </header>

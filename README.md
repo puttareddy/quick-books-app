@@ -1,4 +1,4 @@
-# quick-books-app
+# Quick-Books-App
 
 A FULL Stack application based on MongoDB + LoopbackJS + ReactJS + Node.js technologies. 
 You can refer [Sample Application](https://quick-books-app.herokuapp.com/) for implementation 
@@ -17,6 +17,12 @@ $ npm install
 $ NODE_ENV=production yarn start
 ```
 
+Please note to set the MONGO_DB_URL ENV variable, if you would like to play with MongoDB for database before you 
+start the server. Here is the sample format of the MongoDB URL for reference
+```
+$ set MONGO_DB_URL=mongodb://example:example@exmple.mongolab.com:53312/database
+```
+
 To start the application with sample data, issue the command as  
 ```
 $ yarn .
@@ -25,7 +31,6 @@ $ yarn .
 ## Tests
 ```sh
 $ yarn build      # Runs eslint, code coverage, cucumber tests and nsp check
-$
 ```
 
 ## Front End application
@@ -37,7 +42,6 @@ application in ```dev``` mode, issue the below command:
 $ cd quick-books-api/client
 $ npm install
 $ npm run dev
-$
 ```
 
 Read [Client Application] for more details to play with
@@ -49,35 +53,16 @@ Read [Client Application] for more details to play with
 * Install [Docker](https://docs.docker.com/installation/#installation)
 * Install [Compose](https://docs.docker.com/compose/install/)
 
-* Local development and testing with compose:
-```bash
-$ docker-compose up
-```
-
-* Local development and testing with just Docker:
-```bash
-$ docker build -t mean .
-$ docker run -p 27017:27017 -d --name db mongo
-$ docker run -p 3000:3000 --link db:db_1 mean
-$
-```
-
-* To enable live reload, forward port 35729 and mount /app and /public as volumes:
-```bash
-$ docker run -p 3000:3000 -p 35729:35729 -v /Users/mdl/workspace/mean-stack/mean/public:/home/mean/public -v /Users/mdl/workspace/mean-stack/mean/app:/home/mean/app --link db:db_1 mean
-```
-
 ## Production deploy with Docker
 
 * Production deployment with compose:
 ```bash
-$ docker-compose -f docker-compose-production.yml up -d
+$ docker-compose -f docker-compose.yml up -d
 ```
 
 * Production deployment with just Docker:
 ```bash
-$ docker build -t mean -f Dockerfile-production .
-$ docker run -p 27017:27017 -d --name db mongo
-$ docker run -p 3000:3000 --link db:db_1 mean
+$ docker build -t app -f Dockerfile .
+$ docker run -p 4000:4000
 ```
 

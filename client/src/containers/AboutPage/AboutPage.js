@@ -4,15 +4,18 @@ import React from 'react'
 const AboutPage = () => {
   return (
     <div className='about'>
-      <h1> About </h1>
-      This is a FULL Stack application with below technologies <br />
+      <h1> About App</h1>
+      Quick Book App is FULL Stack application with below features <br />
       <ol>
-        <li> Loopback JS is used to serve RESTFul APIs</li>
-        <li> React/Redux is used to FE application  </li>
-        <li> MongoDB as a database (SasS)</li>
-        <li> QuickBooks API as datasource </li>
-        <li> Docker and Docker compose to deploy the application </li>
+        <li> Expose RESTFul APIs with Loopback.JS </li>
+        <li> Build Client application with React/Redux </li>
+        <li> Use MongoDB as a SaaS</li>
+        <li> Use QuickBooks API as datasource </li>
+        <li> Migrate data from QuickBooks API to MongoDB </li>
+        <li> Docker and Docker compose to deploy the applications </li>
       </ol>
+
+      <h4> Quick Notes </h4>
      <p>
         To migrate data from QB API to MongoDB, you should be authorized to 
         perform this operation. Credentials will be shared on demand to validate this feature.
@@ -20,7 +23,7 @@ const AboutPage = () => {
         Also, Migration would not trigger, if it is already happened in the same session. 
         As of now, session expiration time is set as 25 seconds.
       </p>
-     
+     <h4> Share your own! </h4>
      <p>
         The learning never stops so any feedback, comments,
         criticisms are greatly welcomed!
@@ -32,6 +35,7 @@ const AboutPage = () => {
             /puttareddy/quick-books-app
         </a>
       </p>
+      <br/>
     </div>
   )
 }
