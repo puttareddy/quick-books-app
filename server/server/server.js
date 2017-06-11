@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var cookieSession = require('cookie-session'); //creating a cookie session to persist the oauth information
 var migrate = require('./routes/migrate-data');
-const buildPath = path.join(__dirname, '../client/build')
+const buildPath = path.join(__dirname, '../../client/build')
 
 // Use the session middleware 
 app.use(cookieParser());
