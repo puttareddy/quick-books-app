@@ -1,7 +1,7 @@
     module.exports = {
       db: {
         connector: 'loopback-connector-mongodb',
-        url: process.env.MONGO_DB_URL
+        url: 'mongodb://mongo:27017/demo'
       },
       transient: {
         name: 'transient',
